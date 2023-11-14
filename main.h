@@ -8,7 +8,7 @@
 
 int _printf(const char *, ...);
 int _putchar(char);
-int _puts(const char*);
+int _puts(const char *);
 int _putdec(int);
 int _putint(int, int);
 
