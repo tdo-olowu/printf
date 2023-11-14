@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-int _printf(const char*, ...);
+int _printf(const char *, ...);
 int _putchar(char);
 int _puts(const char*);
 int _putdec(int);
@@ -29,7 +29,8 @@ int (*get_writer(char))(void);
  * @writer: the function invoked to write the input to stdout.
  * Description: associates a special character with a function
  */
-typedef struct format_map {
+typedef struct format_map
+{
 	char ch;
 	int (*writer)(char);
 } fmt_map;
