@@ -8,9 +8,9 @@
  */
 char _putdigit(int n)
 {
-        if ((n >= 0) && (n <= 9))
-                return ('0' + n);
-        else if ((n > 9) && (n <= 36))
-                return ('a' - 10 + n);
-        return (0);
+	if ((n >= 0) && (n <= 9))
+		return ('0' + n);
+	else if ((n > 9) && (n <= 36))
+		return ('a' - 10 + n);
+	return (0);
 }
