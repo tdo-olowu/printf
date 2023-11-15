@@ -6,7 +6,7 @@
  */
 int _putdec(int n)
 {
-char *num = _itoa(n, 10);
+	char *num = _itoa(n, 10);
 	int i, bytes;
 
 	if (num == NULL)

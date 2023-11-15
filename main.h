@@ -17,8 +17,6 @@ char *_itoa(int, int);
 int _abs(int);
 int _ilog(int, int);
 
-int _pow(int, unsigned int);
-
 int (*get_writer(char))(void);
 
 

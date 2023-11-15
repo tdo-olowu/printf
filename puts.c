@@ -1,11 +1,18 @@
 #include "main.h"
 
 /**
- * _putchar - simply outputs a single character.
- * @c: the ASCII character to output.
- * Return: number of bytes written
+ * _puts - prints a pure string to standard output.
+ * @c: pointer to the null-terminated string.
+ * Return: number of bytes written.
  */
-int _putchar(char c)
+int _puts(const char *c)
 {
-	return (write(STDOUT_FILENO, &c, 1));
+	int bytes;
+	int i;
+
+	for (i = 0, bytes = 0 ; (c != NULL) && (c[i] != '\0') ; ++i)
+	{
+		bytes += _putchar(c[i]);
+	}
+	return (bytes);
 }
